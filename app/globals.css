@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "SF Pro Display", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+  --font-display: "SF Pro Display", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
+  --breezeway: #455983;
+  --cold-butter: #f3e088;
+  --sea-salt: #859fa4;
+  --summer-garden: #9e9b41;
+  --brick: #b0482e;
+  --cottage-core: #f1baa3;
+  --background: #f6f0dc;
+  --background-elevated: rgba(255, 255, 255, 0.94);
+  --panel: rgba(255, 255, 255, 0.9);
+  --panel-strong: rgba(255, 255, 255, 0.98);
+  --foreground: #101114;
+  --muted: #434a55;
+  --line: rgba(16, 17, 20, 0.14);
+  --shadow: 0 24px 64px rgba(16, 17, 20, 0.12);
+  --shadow-soft: 0 10px 24px rgba(16, 17, 20, 0.08);
+  --hero-glow: rgba(69, 89, 131, 0.12);
+  --accent: #455983;
+  --accent-soft: rgba(69, 89, 131, 0.12);
+  --nav: rgba(251, 247, 236, 0.94);
+}
+
+.dark {
+  --background: #171717;
+  --background-elevated: rgba(28, 28, 28, 0.86);
+  --panel: rgba(32, 32, 32, 0.82);
+  --panel-strong: rgba(24, 24, 24, 0.94);
+  --foreground: #f3f3f3;
+  --muted: #aaaaaa;
+  --line: rgba(255, 255, 255, 0.08);
+  --shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
+  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.18);
+  --hero-glow: rgba(120, 120, 120, 0.14);
+  --accent: #c8b69c;
+  --accent-soft: rgba(200, 182, 156, 0.1);
+  --nav: rgba(24, 24, 24, 0.88);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(69, 89, 131, 0.18), transparent 24%),
+    linear-gradient(180deg, rgba(243, 224, 136, 0.52) 0%, rgba(241, 186, 163, 0.22) 22%, rgba(133, 159, 164, 0.18) 46%, var(--background) 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top, rgba(90, 90, 90, 0.16), transparent 28%),
+    linear-gradient(180deg, rgba(28, 28, 28, 0.96) 0%, rgba(23, 23, 23, 0.98) 18%, var(--background) 100%);
+}
+
+a,
+button,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+.font-display {
+  font-family: var(--font-display), serif;
+}
+
+.surface {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px);
+}
+
+.surface-strong {
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px);
+}
+
+.text-muted {
+  color: var(--muted);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.palette-breezeway {
+  background: rgba(69, 89, 131, 0.18);
+}
+
+.palette-cold-butter {
+  background: rgba(243, 224, 136, 0.48);
+}
+
+.palette-sea-salt {
+  background: rgba(133, 159, 164, 0.26);
+}
+
+.palette-summer-garden {
+  background: rgba(158, 155, 65, 0.24);
+}
+
+.palette-brick {
+  background: rgba(176, 72, 46, 0.18);
+}
+
+.palette-cottage-core {
+  background: rgba(241, 186, 163, 0.32);
+}
+
+.palette-breezeway,
+.palette-cold-butter,
+.palette-sea-salt,
+.palette-summer-garden,
+.palette-brick,
+.palette-cottage-core {
+  color: var(--foreground);
+}
+
+.palette-breezeway .text-muted,
+.palette-cold-butter .text-muted,
+.palette-sea-salt .text-muted,
+.palette-summer-garden .text-muted,
+.palette-brick .text-muted,
+.palette-cottage-core .text-muted {
+  color: rgba(16, 17, 20, 0.82);
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(17, 24, 39, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 24, 39, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .grid-pattern {
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
