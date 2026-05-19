@@ -15,6 +15,7 @@ export function ThemeToggle() {
   const isDark = mounted && resolvedTheme === "dark";
 
   return (
+    
     <button
       type="button"
       onClick={() => setTheme(isDark ? "light" : "dark")}

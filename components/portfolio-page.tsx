@@ -15,7 +15,6 @@ import {
 } from "lucide-react";
 import { BrowserShell } from "@/components/browser-shell";
 import { SectionHeading } from "@/components/section-heading";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { CaseStudyAccordion } from "@/components/ui/case-study-accordion";
 
 const navigation = [
@@ -116,10 +115,6 @@ export function PortfolioPage() {
                   <NavPill key={item.href} href={item.href} label={item.label} />
                 ))}
               </nav>
-
-              <div className="flex items-center gap-3">
-                <ThemeToggle />
-              </div>
             </div>
           </header>
 
