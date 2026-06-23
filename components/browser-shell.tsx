@@ -15,7 +15,7 @@ export function BrowserShell({ children, className }: BrowserShellProps) {
             <span className="h-3 w-3 rounded-full bg-[#febc2e]" />
             <span className="h-3 w-3 rounded-full bg-[#28c840]" />
           </div>
-          <div className="ml-3 flex-1 rounded-full border border-[color:var(--line)] bg-white/70 px-4 py-2 text-center text-xs text-[color:var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.85)] dark:bg-white/5">
+          <div className="ml-3 flex-1 rounded-full border border-[color:var(--line)] bg-[color:var(--panel-strong)] px-4 py-2 text-center text-xs text-[color:var(--muted)] shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">
             workspace / nicole-previd
           </div>
         </div>

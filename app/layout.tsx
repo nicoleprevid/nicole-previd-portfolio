@@ -3,9 +3,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Nicole Previd | Frontend Engineer",
+  title: "Nicole Previd | UX Engineer | Product Engineer",
   description:
-    "Premium portfolio for Nicole Previd, a product-minded frontend engineer focused on UX, workflow systems, and scalable enterprise applications.",
+    "Portfolio for Nicole Previd, a UX Engineer and Product Engineer focused on workflow-heavy products, AI-assisted prototyping, and stakeholder-driven frontend execution.",
 };
 
 export default function RootLayout({

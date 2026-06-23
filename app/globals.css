@@ -1,43 +1,49 @@
 @import "tailwindcss";
 
 :root {
-  --font-sans: "SF Pro Display", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
-  --font-display: "SF Pro Display", "Avenir Next", "Helvetica Neue", "Segoe UI", sans-serif;
-  --breezeway: #455983;
-  --cold-butter: #f3e088;
-  --sea-salt: #859fa4;
-  --summer-garden: #9e9b41;
-  --brick: #b0482e;
-  --cottage-core: #f1baa3;
-  --background: #f6f0dc;
-  --background-elevated: rgba(255, 255, 255, 0.94);
-  --panel: rgba(255, 255, 255, 0.9);
-  --panel-strong: rgba(255, 255, 255, 0.98);
-  --foreground: #101114;
-  --muted: #434a55;
-  --line: rgba(16, 17, 20, 0.14);
-  --shadow: 0 24px 64px rgba(16, 17, 20, 0.12);
-  --shadow-soft: 0 10px 24px rgba(16, 17, 20, 0.08);
-  --hero-glow: rgba(69, 89, 131, 0.12);
-  --accent: #455983;
-  --accent-soft: rgba(69, 89, 131, 0.12);
-  --nav: rgba(251, 247, 236, 0.94);
+  --font-sans: "Avenir Next", "SF Pro Display", "Segoe UI", sans-serif;
+  --font-display: "Avenir Next", "SF Pro Display", "Segoe UI", sans-serif;
+  --background: #13289d;
+  --background-elevated: rgba(241, 245, 255, 0.92);
+  --panel: rgba(232, 239, 255, 0.88);
+  --panel-strong: rgba(247, 249, 255, 0.96);
+  --foreground: #0b1447;
+  --muted: #46538f;
+  --foreground-inverse: #f6f8ff;
+  --muted-inverse: #c7d0ff;
+  --line: rgba(11, 20, 71, 0.12);
+  --shadow: 0 28px 80px rgba(7, 15, 66, 0.22);
+  --shadow-soft: 0 12px 36px rgba(7, 15, 66, 0.16);
+  --hero-glow: rgba(255, 70, 43, 0.22);
+  --accent: #ff462b;
+  --accent-strong: #d92f17;
+  --accent-soft: rgba(255, 70, 43, 0.14);
+  --accent-warm: #f3bc36;
+  --accent-cool: #1f6fd1;
+  --ink-strong: #13289d;
+  --nav: rgba(19, 40, 157, 0.94);
 }
 
 .dark {
-  --background: #171717;
-  --background-elevated: rgba(28, 28, 28, 0.86);
-  --panel: rgba(32, 32, 32, 0.82);
-  --panel-strong: rgba(24, 24, 24, 0.94);
-  --foreground: #f3f3f3;
-  --muted: #aaaaaa;
+  --background: #0a176d;
+  --background-elevated: rgba(12, 24, 106, 0.9);
+  --panel: rgba(18, 39, 152, 0.84);
+  --panel-strong: rgba(15, 32, 126, 0.96);
+  --foreground: #f4f7ff;
+  --muted: #b7c6ff;
+  --foreground-inverse: #f4f7ff;
+  --muted-inverse: #c7d0ff;
   --line: rgba(255, 255, 255, 0.08);
-  --shadow: 0 24px 64px rgba(0, 0, 0, 0.28);
-  --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.18);
-  --hero-glow: rgba(120, 120, 120, 0.14);
-  --accent: #c8b69c;
-  --accent-soft: rgba(200, 182, 156, 0.1);
-  --nav: rgba(24, 24, 24, 0.88);
+  --shadow: 0 28px 72px rgba(0, 0, 0, 0.36);
+  --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.24);
+  --hero-glow: rgba(255, 70, 43, 0.18);
+  --accent: #ff462b;
+  --accent-strong: #ff6a52;
+  --accent-soft: rgba(255, 70, 43, 0.18);
+  --accent-warm: #f3bc36;
+  --accent-cool: #1f6fd1;
+  --ink-strong: #08104b;
+  --nav: rgba(8, 16, 75, 0.92);
 }
 
 * {
@@ -51,16 +57,18 @@ html {
 body {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, rgba(69, 89, 131, 0.18), transparent 24%),
-    linear-gradient(180deg, rgba(243, 224, 136, 0.52) 0%, rgba(241, 186, 163, 0.22) 22%, rgba(133, 159, 164, 0.18) 46%, var(--background) 100%);
+    radial-gradient(circle at 50% 24%, rgba(31, 111, 209, 0.34), transparent 26%),
+    radial-gradient(circle at 62% 58%, rgba(255, 70, 43, 0.18), transparent 18%),
+    linear-gradient(180deg, #1630b2 0%, #13289d 100%);
   color: var(--foreground);
   font-family: var(--font-sans), sans-serif;
 }
 
 .dark body {
   background:
-    radial-gradient(circle at top, rgba(90, 90, 90, 0.16), transparent 28%),
-    linear-gradient(180deg, rgba(28, 28, 28, 0.96) 0%, rgba(23, 23, 23, 0.98) 18%, var(--background) 100%);
+    radial-gradient(circle at 50% 24%, rgba(31, 111, 209, 0.32), transparent 26%),
+    radial-gradient(circle at 62% 58%, rgba(255, 70, 43, 0.16), transparent 18%),
+    linear-gradient(180deg, #10238f 0%, var(--background) 100%);
 }
 
 a,
@@ -97,48 +105,6 @@ input {
 
 .text-accent {
   color: var(--accent);
-}
-
-.palette-breezeway {
-  background: rgba(69, 89, 131, 0.18);
-}
-
-.palette-cold-butter {
-  background: rgba(243, 224, 136, 0.48);
-}
-
-.palette-sea-salt {
-  background: rgba(133, 159, 164, 0.26);
-}
-
-.palette-summer-garden {
-  background: rgba(158, 155, 65, 0.24);
-}
-
-.palette-brick {
-  background: rgba(176, 72, 46, 0.18);
-}
-
-.palette-cottage-core {
-  background: rgba(241, 186, 163, 0.32);
-}
-
-.palette-breezeway,
-.palette-cold-butter,
-.palette-sea-salt,
-.palette-summer-garden,
-.palette-brick,
-.palette-cottage-core {
-  color: var(--foreground);
-}
-
-.palette-breezeway .text-muted,
-.palette-cold-butter .text-muted,
-.palette-sea-salt .text-muted,
-.palette-summer-garden .text-muted,
-.palette-brick .text-muted,
-.palette-cottage-core .text-muted {
-  color: rgba(16, 17, 20, 0.82);
 }
 
 .grid-pattern {

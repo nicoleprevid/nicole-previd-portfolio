@@ -15,11 +15,11 @@ export function SectionHeading({ eyebrow, title, description }: SectionHeadingPr
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="max-w-3xl"
     >
-      <p className="text-accent mb-4 text-xs font-semibold uppercase tracking-[0.3em]">{eyebrow}</p>
-      <h2 className="font-display text-4xl leading-tight font-medium tracking-[-0.03em] md:text-5xl">
+      <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-[color:var(--accent-strong)]">{eyebrow}</p>
+      <h2 className="font-display text-4xl leading-tight font-medium tracking-[-0.03em] text-[color:var(--foreground)] md:text-5xl">
         {title}
       </h2>
-      {description ? <p className="text-muted mt-5 max-w-2xl text-base leading-8 md:text-lg">{description}</p> : null}
+      {description ? <p className="mt-5 max-w-2xl text-base leading-8 text-[color:var(--muted)] md:text-lg">{description}</p> : null}
     </motion.div>
   );
 }
