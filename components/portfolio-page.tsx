@@ -332,6 +332,22 @@ export function PortfolioPage() {
                 description="Workflow redesign and prototype exploration for a complex internal operations platform."
               />
 
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="mt-4 overflow-hidden rounded-[28px] border border-[color:var(--accent-strong)] bg-[linear-gradient(135deg,var(--accent)_0%,var(--accent-strong)_100%)] p-6 text-white shadow-[var(--shadow-soft)]"
+              >
+                <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--accent-warm)]">Impact</div>
+                <h3 className="mt-4 max-w-4xl text-2xl leading-tight font-semibold tracking-[-0.04em] sm:text-3xl">
+                  Transformed user feedback from &quot;I don&apos;t know how to use this product&quot; into &quot;I wish this workflow supported X.&quot;
+                </h3>
+                <p className="mt-4 max-w-4xl text-sm leading-7 text-white/88">
+                  That shift moved the conversation from basic usability blockers to product optimization opportunities. Instead of pausing development for a months-long UX overhaul, I focused on the smallest possible workflow changes that made the system understandable, even if not perfect.
+                </p>
+              </motion.div>
+
               <div className="mt-4 rounded-[28px] border border-[color:var(--line)] bg-[color:var(--panel-strong)] p-6 shadow-[var(--shadow-soft)]">
                 <div className="text-sm font-medium text-[color:var(--muted)]">
                   Simplifying complex operational workflows through AI-assisted product discovery.
@@ -464,6 +480,22 @@ export function PortfolioPage() {
                 description="A financial memory assistant focused on helping users remember the meaning behind their money."
               />
 
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="mt-4 overflow-hidden rounded-[28px] border border-[color:var(--accent-strong)] bg-[linear-gradient(135deg,var(--accent)_0%,var(--accent-strong)_100%)] p-6 text-white shadow-[var(--shadow-soft)]"
+              >
+                <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--accent-warm)]">Speed to direction</div>
+                <h3 className="mt-4 max-w-4xl text-2xl leading-tight font-semibold tracking-[-0.04em] sm:text-3xl">
+                  Moved quickly from a broad desire for a better financial app to two clear MVP features and screens a developer could already build from.
+                </h3>
+                <p className="mt-4 max-w-4xl text-sm leading-7 text-white/88">
+                  The process started from a common frustration with traditional finance apps, narrowed into two core features, then used AI to generate directions and refine the design into clearer product screens ready for implementation.
+                </p>
+              </motion.div>
+
               <div className="mt-4 rounded-[28px] border border-[color:var(--line)] bg-[color:var(--panel-strong)] p-6 shadow-[var(--shadow-soft)]">
                 <div className="text-sm font-medium text-[color:var(--muted)]">Product purpose</div>
                 <p className="text-muted mt-4 max-w-3xl text-sm leading-7">
@@ -532,7 +564,7 @@ export function PortfolioPage() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
                 className="mt-4 rounded-[28px] border border-[color:var(--line)] bg-[color:var(--panel-strong)] p-6 shadow-[var(--shadow-soft)]"
               >
-                <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">Mini conclusion</div>
+                <div className="text-xs font-semibold uppercase tracking-[0.24em] text-[color:var(--muted)]">conclusion</div>
                 <p className="mt-4 text-sm leading-7">
                   This exploration shows how I use AI to expand early product possibilities, then refine the result through clearer UX priorities, simplicity, and a stronger understanding of what the user is actually trying to make sense of.
                 </p>
@@ -557,7 +589,7 @@ export function PortfolioPage() {
                 <div className="rounded-[28px] border border-[color:var(--line)] bg-[color:var(--ink-strong)] p-6 text-white shadow-[var(--shadow-soft)]">
                   <div className="text-xs font-semibold uppercase tracking-[0.24em] text-white/60">Core message</div>
                   <p className="mt-4 text-2xl leading-tight font-semibold tracking-[-0.04em]">
-                    I can take an ambiguous idea and quickly turn it into something people can understand, discuss, and validate.
+                    I can take a product idea from concept to production without losing context between design and engineering.
                   </p>
                 </div>
               </motion.div>
